@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootl" fx:id="rootl" prefHeight="990.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.fx.view.controller.StartLogin">
+   <children>
+      <ImageView fitHeight="326.0" fitWidth="1023.0" layoutX="452.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/startSignIn.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="685.0" fitWidth="999.0" layoutX="439.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/startSignIn2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="435.0" layoutX="746.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/Captures.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="520.0" layoutY="551.0" prefHeight="36.0" prefWidth="162.0" text="USER NAME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="520.0" layoutY="630.0" prefHeight="36.0" prefWidth="162.0" text="PASSWORD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField id="un" fx:id="un" focusColor="WHITE" labelFloat="true" layoutX="723.0" layoutY="547.0" onAction="#unaction" prefHeight="36.0" prefWidth="484.0" promptText=" Enter UserName" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="pw" fx:id="pw" focusColor="WHITE" labelFloat="true" layoutX="723.0" layoutY="625.0" onAction="#pwonaction" prefHeight="36.0" prefWidth="484.0" promptText=" Enter Password" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton id="vx" fx:id="btnsignIn" layoutX="872.0" layoutY="708.0" onAction="#btnsignIn" prefHeight="42.0" prefWidth="187.0" style="-fx-background-color: #ea1c15;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="995.0" fitWidth="484.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/startSignIn3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1003.0" fitWidth="632.0" layoutX="1301.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/startSignIn3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="1003.0" fitWidth="632.0" layoutX="1450.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/startSignIn3.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

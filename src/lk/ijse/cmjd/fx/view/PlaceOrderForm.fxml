@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="roota" prefHeight="999.0" prefWidth="1920.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.fx.view.controller.PlaceOrderFormController">
+    <stylesheets>
+        <URL value="@/lk/ijse/cmjd/fx/view/style/orderform.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtOrderID" labelFloat="true" layoutX="248.0" layoutY="107.0" onAction="#OnactionOrderId" prefHeight="31.0" prefWidth="507.0" promptText="Enter Order ID" />
+      <JFXTextField fx:id="txtCustomerId" labelFloat="true" layoutX="248.0" layoutY="162.0" onAction="#txtCustomerID_OnAction" prefHeight="31.0" prefWidth="507.0" promptText="Enter Customer ID" />
+      <JFXTextField fx:id="txtItemCode" editable="true" labelFloat="true" layoutX="248.0" layoutY="224.0" onAction="#txtItemCode_OnAction" prefHeight="31.0" prefWidth="507.0" promptText="Enter Item Code" />
+      <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="248.0" layoutY="345.0" onAction="#txtQty_OnAction" prefHeight="31.0" prefWidth="507.0" promptText="Enter Qty." />
+      <JFXButton layoutX="1215.0" layoutY="351.0" onAction="#btnSave_OnAction" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #6b014c;" stylesheets="@style/orderform.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="btnRemove" layoutX="1364.0" layoutY="351.0" onAction="#btnRemoveOnAction" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #2f006e;" stylesheets="@style/orderform.css" text="Remove" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <TableView fx:id="tblCustomers" layoutX="248.0" layoutY="396.0" onMouseClicked="#tblCustomers_OnMouseClicked" prefHeight="381.0" prefWidth="1369.0">
+        <columns>
+          <TableColumn prefWidth="128.0" text="Order ID" />
+          <TableColumn prefWidth="140.0" text="Date" />
+            <TableColumn prefWidth="191.0" text="Customer ID" />
+            <TableColumn prefWidth="200.0" text="Customer Name" />
+            <TableColumn prefWidth="79.0" text="Item Code" />
+            <TableColumn prefWidth="196.0" text="Item Discription" />
+            <TableColumn prefWidth="103.0" text="Qty On Hand" />
+            <TableColumn prefWidth="117.0" text="Unit Price" />
+            <TableColumn prefWidth="59.0" text="Qty" />
+            <TableColumn prefWidth="153.0" text="Total Price" />
+        </columns>
+      </TableView>
+      <Label fx:id="lblTotal" layoutX="248.0" layoutY="817.0" text="Total : ">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnPlaceOrder" layoutX="1383.0" layoutY="800.0" onAction="#btnPlaceOrder" prefHeight="54.0" prefWidth="234.0" style="-fx-background-color: #348c3d;" stylesheets="@style/orderform.css" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></JFXButton>
+      <JFXDatePicker fx:id="Date1" layoutX="983.0" layoutY="93.0" prefHeight="45.0" prefWidth="616.0" />
+      <TextField fx:id="txtTotal" layoutX="404.0" layoutY="820.0" prefHeight="31.0" prefWidth="362.0">
+         <font>
+            <Font size="21.0" />
+         </font></TextField>
+      <JFXButton fx:id="btnReport" layoutX="1515.0" layoutY="351.0" onAction="#btnReportOnAction" style="-fx-background-color: #a7a7a7;" text="Report">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXButton>
+      <ImageView id="ha" fx:id="ha" fitHeight="103.0" fitWidth="104.0" layoutX="53.0" layoutY="20.0" onMouseClicked="#navigateToHomea" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="767.0" layoutY="14.0" prefHeight="66.0" prefWidth="386.0" text="Food &amp; Beverages">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <ImageView id="ca" fx:id="ca" fitHeight="103.0" fitWidth="104.0" layoutX="53.0" layoutY="538.0" onMouseClicked="#navigateToHomea" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/clean.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="sa" fx:id="sa" fitHeight="90.0" fitWidth="100.0" layoutX="61.0" layoutY="396.0" onMouseClicked="#navigateToHomea" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/store.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="wa" fx:id="wa" fitHeight="90.0" fitWidth="113.0" layoutX="54.0" layoutY="267.0" onMouseClicked="#navigateToHomea" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/wedding.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="ra" fx:id="ra" fitHeight="95.0" fitWidth="113.0" layoutX="49.0" layoutY="152.0" onMouseClicked="#navigateToHomea" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/customers.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXButton id="btnAddNewCustomer" layoutX="1004.0" layoutY="351.0" onAction="#btnAddNew_OnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #076e1b;" text="Update Guest" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtQtyOnHand" labelFloat="true" layoutX="248.0" layoutY="283.0" prefHeight="31.0" prefWidth="507.0" promptText="Qty On Hand" />
+      <JFXTextField fx:id="txtCustomerName" labelFloat="true" layoutX="983.0" layoutY="162.0" prefHeight="31.0" prefWidth="607.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtDescription" labelFloat="true" layoutX="983.0" layoutY="225.0" prefHeight="31.0" prefWidth="607.0" promptText="Item Discription" />
+      <JFXTextField fx:id="txtUnitPrice" labelFloat="true" layoutX="983.0" layoutY="290.0" onAction="#uniteaaction" prefHeight="31.0" prefWidth="607.0" promptText="Unit Price" />
+   </children>
+</AnchorPane>

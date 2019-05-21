@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="rootaaa" fx:id="rootaaa" prefHeight="988.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.fx.view.controller.AccountantLogin">
+   <children>
+      <ImageView id="aaa" fx:id="aaa" fitHeight="151.0" fitWidth="157.0" layoutX="510.0" layoutY="98.0" onMouseClicked="#navigatetoHomeaaa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXTextField fx:id="txtname" layoutX="761.0" layoutY="329.0" prefHeight="45.0" prefWidth="520.0" promptText="USER NAME">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtpassword" accessibleRole="PASSWORD_FIELD" layoutX="761.0" layoutY="449.0" prefHeight="45.0" prefWidth="520.0" promptText="PASSWORD">
+         <font>
+            <Font name="Ebrima Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnsignin" layoutX="947.0" layoutY="572.0" onAction="#btnsignin" onMouseClicked="#sign" prefHeight="45.0" prefWidth="148.0" style="-fx-background-color: #026e33;" text="Sign In" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="857.0" layoutY="125.0" prefHeight="73.0" prefWidth="357.0" text="Account Details">
+         <font>
+            <Font name="System Bold" size="47.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

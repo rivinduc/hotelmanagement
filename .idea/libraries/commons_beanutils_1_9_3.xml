@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.9.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/commons-beanutils-1.9.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/commons-collections-3.2.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/commons-javaflow-1590792.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/commons-logging-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/jasperreports-6.7.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/jasperreports-javaflow-6.7.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/jfoenix.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/Jasper-Report/Demo-03/lib/mysql-connector-java-8.0.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

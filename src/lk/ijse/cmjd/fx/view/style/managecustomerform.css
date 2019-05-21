@@ -1,0 +1,43 @@
+.mainFxmlClass {
+    -fx-background-color: red;
+}
+#clear:hover{
+    -fx-background-color:#92989d;
+}
+#imgHome:hover{
+    -fx-effect: dropshadow(gaussian,#6495ED,20,0.0,0,0);
+}
+
+#btnAddNewCustomer{
+    -fx-background-color:linear-gradient(#1b00ea,#035fc6,#1b00ea);
+    -fx-text-fill: white;
+    -cursor: pointer;
+}
+#btnAddNewCustome{
+    -fx-background-color:#c20000;
+    -fx-text-fill: white;
+    -cursor: pointer;
+}
+
+#btnSave{
+    -fx-background-color:#a8b3bf;
+    -fx-text-fill: white;
+    -curser:pointer;
+}
+#btnSave:hover {
+
+    -fx-background-color:#92989d;
+}
+
+#btnAddNewCustomer:hover {
+
+    -fx-background-color:linear-gradient(#035fc6,#1b00ea,#035fc6);
+}
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #007bff 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+}
+

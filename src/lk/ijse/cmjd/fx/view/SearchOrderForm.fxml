@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="rootss" onInputMethodTextChanged="#e0" onKeyPressed="#e1" onKeyReleased="#e2" onKeyTyped="#e3" prefHeight="999.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.fx.view.controller.SearchOrderFormController">
+   <children>
+      <JFXTextField fx:id="txtSearchOrder" labelFloat="true" layoutX="278.0" layoutY="187.0" onAction="#find" onKeyPressed="#dd" onKeyReleased="#d1" onMouseClicked="#findclean" prefHeight="45.0" prefWidth="572.0" promptText="Enter Room ID to find the Situvation" />
+      <TableView fx:id="tblOrders" layoutX="278.0" layoutY="247.0" onMouseClicked="#tblOrders_OnMouseClicked" prefHeight="657.0" prefWidth="787.0">
+        <columns>
+          <TableColumn prefWidth="159.0" text="Room ID" />
+          <TableColumn prefWidth="187.0" text="Room Status" />
+            <TableColumn prefWidth="276.0" text="Cleaned By" />
+            <TableColumn prefWidth="164.0" text="Date" />
+        </columns>
+      </TableView>
+      <ImageView id="hss" fx:id="hss" fitHeight="114.0" fitWidth="101.0" layoutX="54.0" layoutY="30.0" onMouseClicked="#navigateToHomess" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="793.0" layoutY="58.0" prefHeight="58.0" prefWidth="294.0" text="House Keeping">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="1222.0" layoutY="254.0" prefHeight="45.0" prefWidth="92.0" text="Room ID">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="1222.0" layoutY="512.0" prefHeight="45.0" prefWidth="92.0" text="Date">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="1222.0" layoutY="424.0" prefHeight="45.0" prefWidth="153.0" text="Cleaned By">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="1222.0" layoutY="342.0" prefHeight="45.0" prefWidth="116.0" text="Room Status">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="Date" layoutX="1479.0" layoutY="519.0" prefHeight="31.0" prefWidth="308.0" />
+      <JFXTextField fx:id="txtDescription" layoutX="1478.0" layoutY="428.0" prefHeight="31.0" prefWidth="294.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtItemCode" layoutX="1478.0" layoutY="258.0" onAction="#ds" prefHeight="31.0" prefWidth="294.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXTextField>
+      <ImageView id="wss" fx:id="wss" fitHeight="90.0" fitWidth="104.0" layoutX="53.0" layoutY="387.0" onMouseClicked="#navigateToHomess" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/wedding.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="sss" fx:id="sss" fitHeight="103.0" fitWidth="104.0" layoutX="52.0" layoutY="519.0" onMouseClicked="#navigateToHomess" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/store.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="fss" fx:id="fss" fitHeight="103.0" fitWidth="104.0" layoutX="53.0" layoutY="293.0" onMouseClicked="#navigateToHomess" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/items.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="rss" fx:id="rss" fitHeight="95.0" fitWidth="113.0" layoutX="48.0" layoutY="173.0" onMouseClicked="#navigateToHomess" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/customers.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXComboBox fx:id="combostate" layoutX="1478.0" layoutY="349.0" prefHeight="31.0" prefWidth="294.0" promptText="Room State" />
+      <JFXButton id="btnSave" fx:id="btnSave" layoutX="1440.0" layoutY="587.0" onAction="#btnSave_OnAction" prefHeight="45.0" prefWidth="370.0" style="-fx-background-color: #7c7c00;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton id="btnDelete" fx:id="btnDelete" layoutX="1560.0" layoutY="711.0" onAction="#btnDelete_OnAction" prefHeight="45.0" prefWidth="147.0" style="-fx-background-color: #900101;" text="Delete" textFill="#f2f2f2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnReport" layoutX="1560.0" layoutY="774.0" onAction="#btnReport_OnAction" prefHeight="45.0" prefWidth="147.0" style="-fx-background-color: #c5c5c5;" text="Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAddNew" layoutX="1554.0" layoutY="650.0" onAction="#btnAddNew_OnAction" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #005478;" text="Add New" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="reset" layoutX="1560.0" layoutY="831.0" onAction="#reset" prefHeight="45.0" prefWidth="147.0" style="-fx-background-color: #c5c5c5;" text="Reset">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

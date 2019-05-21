@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="root" fx:id="rooty" prefHeight="990.0" prefWidth="1930.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.fx.view.controller.ManagementController">
+   <children>
+      <ImageView id="hy" fx:id="hy" fitHeight="103.0" fitWidth="104.0" layoutX="63.0" layoutY="30.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="ay" fx:id="ay" fitHeight="103.0" fitWidth="104.0" layoutX="64.0" layoutY="735.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/acc.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="sy" fx:id="sy" fitHeight="90.0" fitWidth="100.0" layoutX="71.0" layoutY="485.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/store.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="wy" fx:id="wy" fitHeight="90.0" fitWidth="113.0" layoutX="64.0" layoutY="364.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/wedding.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="ry" fx:id="ry" fitHeight="95.0" fitWidth="113.0" layoutX="59.0" layoutY="162.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/customers.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="cy" fx:id="cy" fitHeight="103.0" fitWidth="104.0" layoutX="63.0" layoutY="603.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/clean.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="fy" fx:id="fy" fitHeight="103.0" fitWidth="104.0" layoutX="62.0" layoutY="279.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/items.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="weby" fx:id="weby" fitHeight="121.0" fitWidth="113.0" layoutX="74.0" layoutY="855.0" onMouseClicked="#navigateToHomey" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/logo795.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

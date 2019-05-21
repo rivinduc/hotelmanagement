@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="root" fx:id="root1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#ddaaa" prefHeight="988.0" prefWidth="1920.0" style="-fx-background-color: white;" stylesheets="@/lk/ijse/cmjd/fx/view/style/managecustomerform.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.cmjd.fx.view.controller.ManageCustomerFormController">
+   <children>
+      <ImageView id="h" fx:id="h" fitHeight="103.0" fitWidth="104.0" layoutX="53.0" layoutY="14.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/home-icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="801.0" layoutY="18.0" prefHeight="95.0" prefWidth="318.0" text="Reservation">
+         <font>
+            <Font name="System Bold" size="56.0" />
+         </font>
+      </Label>
+      <JFXButton id="btnAddNewCustomer" layoutX="664.0" layoutY="590.0" onAction="#btnAddNew_OnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #890505;" text="Update Guest" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="txtCustomerId" labelFloat="true" layoutX="218.0" layoutY="153.0" onAction="#onEnter" onMouseClicked="#SearchGuest" prefHeight="31.0" prefWidth="409.0" promptText="Guest ID Or Passport No :">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" labelFloat="true" layoutX="218.0" layoutY="212.0" onAction="#guestnameOnaction" prefHeight="31.0" prefWidth="409.0" promptText="Guest Name :">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" labelFloat="true" layoutX="218.0" layoutY="272.0" onAction="#country" prefHeight="21.0" prefWidth="409.0" promptText="Guest Country :">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></JFXTextField>
+      <JFXButton id="btnAddNewCustomer" fx:id="btnSave" layoutX="433.0" layoutY="590.0" onAction="#btnSave_OnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #890505;" text="AddGuest" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton id="btnAddNewCustome" fx:id="btnDelete" layoutX="1109.0" layoutY="590.0" onAction="#btnDelete_OnAction" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #e00e0e;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TableView fx:id="tblCustomers" layoutX="10.0" layoutY="662.0" onMouseClicked="#tblCustomers_OnMouseClicked" prefHeight="322.0" prefWidth="1899.0">
+        <columns>
+          <TableColumn prefWidth="174.0" text="Guest ID" />
+            <TableColumn minWidth="0.0" prefWidth="202.0" text="Guest Name" />
+            <TableColumn minWidth="0.0" prefWidth="126.0" text="Guest Country" />
+            <TableColumn minWidth="0.0" prefWidth="220.0" text="Guest email" />
+            <TableColumn minWidth="0.0" prefWidth="100.0" text="Arrival Date" />
+            <TableColumn minWidth="0.0" prefWidth="116.0" text="Depature Date" />
+            <TableColumn minWidth="0.0" prefWidth="74.0" text="No Days" />
+            <TableColumn minWidth="0.0" prefWidth="206.0" text="Room Type" />
+            <TableColumn minWidth="0.0" text="Rooms No" />
+            <TableColumn minWidth="0.0" prefWidth="79.0" text="N.Rooms" />
+            <TableColumn minWidth="0.0" prefWidth="135.0" text="Meal Type" />
+            <TableColumn minWidth="0.0" prefWidth="143.0" text="PaymentType" />
+            <TableColumn minWidth="0.0" prefWidth="243.0" text="Total Price" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <JFXButton id="btnSave" fx:id="btnDelete1" layoutX="1494.0" layoutY="590.0" onAction="#btnReport_OnAction" prefHeight="31.0" prefWidth="129.0" text="Report">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="txtCustomerName1" labelFloat="true" layoutX="218.0" layoutY="339.0" onAction="#sssss" prefHeight="31.0" prefWidth="409.0" promptText="Guest email :">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></JFXTextField>
+      <JFXDatePicker fx:id="Date1" layoutX="765.0" layoutY="339.0" onAction="#date" prefHeight="31.0" prefWidth="425.0" promptText="Depature Date">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXDatePicker>
+      <JFXComboBox id="combobox1" fx:id="combobox1" layoutX="1322.0" layoutY="272.0" onAction="#combobox1" prefHeight="31.0" prefWidth="433.0" promptText="Room Type" />
+      <JFXTextField fx:id="rn" labelFloat="true" layoutX="765.0" layoutY="207.0" onAction="#rn" prefHeight="31.0" prefWidth="409.0" promptText="Room No:">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="days" labelFloat="true" layoutX="765.0" layoutY="153.0" onAction="#days" onKeyReleased="#dd" prefHeight="31.0" prefWidth="409.0" promptText="No Of Days:">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTextField>
+      <JFXTextField fx:id="label31" labelFloat="true" layoutX="781.0" layoutY="504.0" prefHeight="45.0" prefWidth="357.0" promptText="Total Price:">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></JFXTextField>
+      <JFXComboBox id="combobox2" fx:id="combobox2" layoutX="1319.0" layoutY="339.0" onAction="#combobox2" prefHeight="31.0" prefWidth="433.0" promptText="Payment Type" />
+      <JFXDatePicker fx:id="Date2" layoutX="765.0" layoutY="272.0" onAction="#date2" prefHeight="31.0" prefWidth="425.0" promptText="Arrival Date">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXDatePicker>
+      <JFXButton id="btnSave" fx:id="btncalc" layoutX="1303.0" layoutY="590.0" onAction="#btncalc_OnAction" prefHeight="31.0" prefWidth="129.0" text="Calculator">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton id="btnAddNewCustomer" fx:id="reset" layoutX="896.0" layoutY="590.0" onAction="#reset" prefHeight="31.0" prefWidth="129.0" style="-fx-background-color: #890505;" text="Reset" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView id="fb" fx:id="fb" fitHeight="103.0" fitWidth="106.0" layoutX="52.0" layoutY="156.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/items.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="wd" fx:id="wd" fitHeight="103.0" fitWidth="106.0" layoutX="45.0" layoutY="269.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/wedding.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="st" fx:id="st" fitHeight="95.0" fitWidth="103.0" layoutX="50.0" layoutY="401.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/store.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView id="cl" fx:id="cl" fitHeight="95.0" fitWidth="113.0" layoutX="50.0" layoutY="526.0" onMouseClicked="#navigateToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../asset/clean.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <JFXComboBox id="combomeal" fx:id="combomeal" layoutX="1322.0" layoutY="207.0" onAction="#combomeal" prefHeight="31.0" prefWidth="433.0" promptText="Meal Plane" />
+      <JFXButton id="clear" layoutX="660.0" layoutY="150.0" onAction="#idc" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="660.0" layoutY="204.0" onAction="#namec" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="660.0" layoutY="269.0" onAction="#countryc" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="660.0" layoutY="336.0" onAction="#emailc" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1197.0" layoutY="204.0" onAction="#roomnc" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="1197.0" layoutY="150.0" onAction="#nodaysc" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="725.0" layoutY="127.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="7.0" />
+      <Separator layoutX="1275.0" layoutY="132.0" orientation="VERTICAL" prefHeight="274.0" prefWidth="7.0" />
+      <JFXTextField fx:id="label4" labelFloat="true" layoutX="275.0" layoutY="426.0" prefHeight="45.0" prefWidth="250.0" promptText="Room Price:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lable1" labelFloat="true" layoutX="1075.0" layoutY="426.0" prefHeight="45.0" prefWidth="285.0" promptText="Meals Price:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lable2" labelFloat="true" layoutX="1495.0" layoutY="426.0" prefHeight="45.0" prefWidth="285.0" promptText="tax:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="label3" labelFloat="true" layoutX="668.0" layoutY="426.0" prefHeight="45.0" prefWidth="250.0" promptText="Rooms Price:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="label41" labelFloat="true" layoutX="1774.0" layoutY="325.0" prefHeight="45.0" prefWidth="129.0" promptText="Rate">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="1138.0" layoutY="204.0" onAction="#roomst" prefHeight="37.0" prefWidth="42.0" style="-fx-background-color: #0a0064;" text="S" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="daysi" labelFloat="true" layoutX="1319.0" layoutY="153.0" onAction="#nrr" onKeyReleased="#dd" prefHeight="31.0" prefWidth="433.0" promptText="No Of Rooms:">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton layoutX="1774.0" layoutY="150.0" onAction="#noRoomsc" prefHeight="31.0" prefWidth="42.0" style="-fx-background-color: #05720b;" text="C" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

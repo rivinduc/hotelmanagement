@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/SignIn.css">
+    <title>Hotel FourSeasons</title>	<link rel="Icon" href="logo.png">
+</head>
+<body>
+
+<div class="h">
+    <div class ="imglogo">
+        <img src="../asset/logo795.png"width="90px"height="100px">
+        <div class = "topic">
+            <h1>FOURSEASONS</h1>
+            <a href ="http://localhost:55063/POS-System/lk/ijse/cmjd/fx/view/SignUp.html?_ijt=lf20tnkfuelgpgrbv0v71g7v14"id ="button2"> Sign In</a>
+
+            <a href ="#"id ="button3"> Sign Up</a>
+
+
+
+
+            <div class ="nav">
+                <ul>
+                    <li>
+                        <a href ="http://localhost:55063/POS-System/lk/ijse/cmjd/fx/view/Home.html?_ijt=dqrmmkjf9qovsvlge7ge9o7hgj">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            Private Retreats</a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i> Residences</a></li>
+                    <li><a href = "#">
+                        <i class="fa fa-usd" aria-hidden="true"></i> Meeting & Events</a></li>
+                    <li><a href = "#">
+                        <i class="fa fa-handshake-o" aria-hidden="true"></i> Services</a></li>
+                    <li><a href = "#">
+                        <i class="fa fa-home" aria-hidden="true"></i>Gifts Cards</a>
+                    </li>
+                    <li>
+                        <a href = "#">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i> About Us</a></li>
+                    <li>
+                        <a href = "#">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>Contact Us</a></li>
+                </ul>
+            </div></div></div>
+</div>
+
+<br/>
+
+<input id="demo1" type="password" placeholder=" Password">
+<input id="demo" type="text" placeholder=" Name">
+
+<button class="button" type="button"onclick="myFunction()">Sign In</button>
+
+<p id="message"></p>
+<script>
+    function myFunction()
+    {
+        var  x;
+        var x1;
+        x = document.getElementById("demo").value;
+        x1 = document.getElementById("demo1").value;
+        try
+        {
+
+            if(x1== "") alert(" Password is Empty");
+            if(x== "")alert(" Name is Empty ");
+
+
+            if(x != "chamath"&& x != "Chamath" && x != "CHAMATH" || x1 != "1234" ) throw "Input ";
+
+            if(x <=999999999999)throw "Input,You cannot Enter numbers for User Name";
+            // if(x1 != "1234") trow "Password";
+            window.location.href="http://localhost:55063/POS-System/lk/ijse/cmjd/fx/view/ManageControl.html?_ijt=vthesf39of4jf00vbdbvcitqsl";
+        }
+        catch(err)
+        {
+            alert("Invalid " + err);
+        }
+    }
+</script>
+</div>
+
+<div id="slider">
+    <figure>
+        <img src=" ../asset/d6.jpg">
+        <img src="../asset/d5.jpg">
+        <img src="../asset/d4.jpg">
+        <img src="../asset/d3.jpg">
+        <img src="../asset/g.jpg">
+    </figure>
+    <div class="sss">
+        <h2><p>Discover</p></h2>
+    </div>
+    <div class="ss">
+        <h2><p>FourSeasons Hotel And Resort</p></h2>
+    </div>
+</div>
+
+
+
+<div class ="imglogo6">
+    <img src="../asset/d10.png"width= "100%"height="500px">
+</div>
+</body>
+</html>
